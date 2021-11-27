@@ -1,0 +1,41 @@
+Problema04 (miniespecificación -use ciclo haga-hasta)
+Generar una solución que permita ingresar jugadores de fútbol; por cada jugador se debe solicitar:
+	-Nombre el jugador
+	-Posición en el campo de juego
+	-Edad
+	-Estatura
+El ciclo de ingreso de información deberá terminar cuando el usuario lo decida. Se debe imprimer el siguiente reporte (usar una cadena de acumulación):
+
+Listado de Jugadores:
+
+	-Alexander Dominguez -Arquero-, edad 32, estatura 1.95
+	-Xavier Arreaga -Defensa-, edad 24, estatura 1.85
+	-Moisés Caicedo -Mediocentro-, edad 19, estatura 1.88
+	-Ángel Mena -Delantero-, edad 32, estatura 1.75
+	-Michael Estrada -Delantero-, edad 27, estatura 1.93
+Promedio de edades: 26.8 Promedio de estaturas: 1.87
+
+1.  Inicio
+2.  nombre_jugador, x [{A-Z},{a-z},{BS}] <-- " "
+3.  posicion_juego, x [{A-Z},{a-z}, {BS}] <-- " "
+4.  edad_jugador, x [{0-9}] <-- " "
+5.  estatura_jugador, x [{0-9}] <-- " "
+6.  bandera = true
+7.  salida, x[{A-Z},{a-z},´{}{BS}
+8.  cadena_final, x[{A-Z},{a-z},{"-"},{BS}]
+9.  	Haga hasta
+10.  Escribir "Ingrese el nombre del jugador"
+11.  lea nombre_jugador
+12. Escribir "Ingrese la posicion en el campo de juego"
+13. lea posicion_juego
+14. Escribir "Ingrese la edad del jugador"
+15. lea edad_jugador
+16. Escribir "Ingrese la estatura del jugador"
+17. lea estatura_jugador
+18. Escribir "Ingrese si para salir"
+19.		Si (salida == Si) {
+20.			bandera = false;
+21. 	Fin Haga Hasta (bandera)
+22. cadena_final = nombre_jugador "-" posicion_jugador "-" edad_jugador "-" estatura_jugador\n
+23. Escribir "Los datos de los jugadores son: cadena_final"
+24. Fin
